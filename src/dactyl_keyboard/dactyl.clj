@@ -44,7 +44,7 @@
 
 (def thumb-offsets [6 -3 7])
 
-(def keyboard-z-offset 10)               ; controls overall height; original=9 with centercol=3; use 16 for centercol=2
+(def keyboard-z-offset 16)               ; controls overall height; original=9 with centercol=3; use 16 for centercol=2
 
 (def extra-width 2.5)                   ; extra space between the base of keys; original= 2
 (def extra-height 1.0)                  ; original= 0.5
@@ -1467,7 +1467,7 @@
 (spit "things/right-plate.scad"
       (write-scad
         (extrude-linear
-          {:height 2.6 :center false}
+          {:height 2 :center false}
           (project
             (difference
               (union
